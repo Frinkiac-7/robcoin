@@ -1,4 +1,4 @@
-[F7 Logo](http://frinkiac-7.net/images/f7-pos.png)
+![F7 Logo](http://frinkiac-7.net/images/f7-pos.png "F7 logo")
 
 # Robcoin - Fun with cryptocurrency
 
