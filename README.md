@@ -21,7 +21,7 @@ Robcoin is an account management app for an eponymous pseudo-cryptocurrency.
 
 ### Issues and Planned Features
 
-- 'Feature: Establish actual cryptocurrency': Explore possibility of converting robcoin from pseudo to actual cryptocurrency
+- `Feature: Establish actual cryptocurrency`: Explore possibility of converting robcoin from pseudo to actual cryptocurrency
 
 ## Development Process
 
