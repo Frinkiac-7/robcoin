@@ -1,5 +1,5 @@
 class BalancesController < ApplicationController
-  before_action :set_balance, only: [:show, :update, :destroy]
+  before_action :set_balance, only: [:update, :destroy]
 
   # GET /balances
   def index
@@ -10,6 +10,7 @@ class BalancesController < ApplicationController
 
   # GET /balances/1
   def show
+    @balance = Balance.find_by user_id: params[:id]
     render json: @balance
   end
 
