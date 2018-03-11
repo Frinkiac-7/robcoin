@@ -1,5 +1,5 @@
 class BalancesController < ApplicationController
-  before_action :set_balance, only: [:update, :destroy]
+  before_action :set_balance, only: [:destroy]
 
   # GET /balances
   def index
@@ -27,6 +27,7 @@ class BalancesController < ApplicationController
 
   # PATCH/PUT /balances/1
   def update
+    @balance = Balance.find_by user_id: params[:id]
     if @balance.update(balance_params)
       render json: @balance
     else
