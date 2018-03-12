@@ -2,7 +2,7 @@
 
 # Robcoin - An banking API
 
-Robcoin is an API for an account management app designed for an eponymously named pseudo-cryptocurrency.
+Robcoin is an API for an account management app designed for an eponymously named pseudo-cryptocurrency. The front-end client repo can be found here https://github.com/Frinkiac-7/robcoin-client
 
 ## Features
 
