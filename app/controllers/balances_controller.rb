@@ -1,20 +1,19 @@
 # frozen_string_literal: true
 
 class BalancesController < ProtectedController
-  before_action :set_balance, only: %i[update destroy]
-  before_action :set_id, only: %i[index show]
+  before_action :set_balance, only: %i[show update destroy]
 
   # GET /balances
   def index
+    @balance = current_user.balances
+
     render json: @balance
   end
 
   # GET /balances/1
   def show
-    @balance = current_user.balances
 
     render json: @balance
-    # render json: @current_user.balances
   end
 
   # POST /balances
@@ -47,10 +46,6 @@ class BalancesController < ProtectedController
   # Use callbacks to share common setup or constraints between actions.
   def set_balance
     @balance = current_user.balances.find(params[:id])
-  end
-
-  def set_id
-    @balance = current_user.balances
   end
 
   # Only allow a trusted parameter "white list" through.
